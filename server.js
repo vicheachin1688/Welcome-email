@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 mailchimp.setConfig({
   apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_SERVER_PREFIX, // e.g. 'us11'
+  server: process.env.MAILCHIMP_SERVER_PREFIX, 
 });
 
 app.get("/", (req, res) => {
